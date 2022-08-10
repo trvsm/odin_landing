@@ -1,6 +1,8 @@
 body{
     display: flex;
     flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
 }
 
 header{
@@ -38,10 +40,54 @@ article{
     text-align: center;
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 figure{
     display: flex;
     flex-direction: column;
     max-width: 20%;
+}
+
+.quote{
+    background-color: #e5e7eb;
+    color:#1f2937;
+    text-align: left;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+blockquote{
+    margin-bottom: 0;
+}
+
+cite{
+align-self: flex-end;
+margin: 1rem;
+margin-top: 0;
+}
+
+.action{
+    margin: 3rem;
+    background-color: #3882f6;
+    color: #f9faf8;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    margin:.5rem;
+    padding: .5rem;
+    background-color: #3882f6;
+    color: #f9faf8;
+}
+
+footer{
+    text-align: center;
+    margin-top: auto;
+    /* remember this margin-top: auto to prevent floating footer! */
+    padding: .5rem;
+    background-color: #1f2937;
+    color:#f9faf8;
 }
